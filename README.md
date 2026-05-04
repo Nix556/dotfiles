@@ -1,4 +1,4 @@
-# Hyprland dotfiles
+# My dotfiles
 
 ## system
 Hyprland (Wayland compositor)
