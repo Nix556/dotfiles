@@ -1,8 +1,15 @@
-Compositor: Hyprland
-Terminal: Kitty
-Bar: Waybar
-Launcher: Wofi
-File Manager: Thunar
-Notifications: Mako
-Lock: hyprlock
-Wallpaper: hyprpaper
+# Hyprland dotfiles
+
+## system
+Hyprland (Wayland compositor)
+
+## interface
+Kitty (terminal)
+Waybar (status bar)
+Wofi (launcher)
+Thunar (file manager)
+
+## system tools
+Mako (notifications)
+hyprlock (lock screen)
+hyprpaper (wallpaper)

@@ -1,12 +1,16 @@
+# font
 font=JetBrainsMono Nerd Font 9
 
+# position
 anchor=top-right
 margin=12
 padding=8
 
+# size
 width=340
 height=120
 
+# base colors
 background-color=#0e1016dd
 text-color=#e6e6e6ff
 
@@ -16,22 +20,27 @@ border-color=#8bd5cacc
 
 progress-color=over #8bd5ca
 
+# icons
 icons=1
 max-icon-size=32
 
+# behavior
 default-timeout=5000
 group-by=app-name
 
 layer=overlay
 
+# low urgency
 [urgency=low]
 border-color=#6ee7b7aa
 text-color=#a8a8a8
 
+# normal urgency
 [urgency=normal]
 border-color=#f5c26baa
 text-color=#e6e6e6ff
 
+# critical urgency
 [urgency=critical]
 border-color=#ff6b6bcc
 text-color=#ffffff
