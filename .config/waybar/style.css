@@ -1,0 +1,91 @@
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* bar */
+window#waybar {
+    background: transparent;
+    color: #e6e6e6;
+}
+
+/* shared module baseline */
+#workspaces,
+#clock,
+#battery,
+#network,
+#pulseaudio,
+#tray,
+#custom-sysinfo,
+#custom-poweroff {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0 6px;
+    margin: 0;
+    color: #e6e6e6;
+
+    /* smooth transitions for everything */
+    transition: color 150ms ease;
+}
+
+/* subtle hierarchy: dim some modules slightly */
+#network,
+#pulseaudio {
+    color: #cfcfcf;
+}
+
+/* WORKSPACES */
+#workspaces button {
+    background: transparent;
+    border: none;
+    padding: 0 4px;
+    margin: 0;
+    color: #a8a8a8;
+}
+
+#workspaces button.active {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+#workspaces button:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* CLOCK */
+#clock {
+    color: #ffffff;
+}
+
+/* BATTERY */
+#battery.warning {
+    color: #f5c26b;
+}
+
+#battery.critical {
+    color: #ff6b6b;
+}
+
+#battery.charging {
+    color: #8bd5ca;
+}
+
+/* GROUP spacing fix */
+#group-information > * {
+    padding: 0 4px;
+}
+
+/* HOVER ACCENTS */
+#network:hover,
+#pulseaudio:hover,
+#clock:hover,
+#battery:hover {
+    color: #ffffff;
+}
+
+/* TRAY spacing */
+#tray {
+    margin-right: 4px;
+}
