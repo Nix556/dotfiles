@@ -1,4 +1,3 @@
-# prompt behavior
 setopt PROMPT_SUBST
 
 # history
@@ -7,20 +6,29 @@ HISTSIZE=10000
 SAVEHIST=10000
 
 # colors
-FG="#e6e6e6"
-DIM="#a8a8a8"
-SUB="#cfcfcf"
 ACCENT="#8bd5ca"
+SUB="#cfcfcf"
+DIM="#a8a8a8"
 WHITE="#ffffff"
 
-# git branch
+# user@host
+user_host='%F{$ACCENT}%n@%m%f'
+
+# path
+current_dir='%F{$SUB}%~%f'
+
+# git
 git_branch() {
   git rev-parse --is-inside-work-tree &>/dev/null || return
-  echo " %F{$ACCENT} $(git branch --show-current)%f"
+  local branch
+  branch=$(git symbolic-ref --quiet --short HEAD 2>/dev/null \
+        || git rev-parse --short HEAD 2>/dev/null)
+  echo " $branch"
 }
 
 # prompt
-PROMPT='%F{$DIM}%n@%m%f$(git_branch)
-%F{$ACCENT}➜ %f'
+PROMPT="╭─ ${user_host} ${current_dir} \$(git_branch)
+╰─ %B%F{$WHITE}➜%f%b "
 
-RPROMPT='%F{$SUB}%~%f  %F{$DIM}%*%f'
+# clock
+RPROMPT="%F{$DIM}%*%f"
