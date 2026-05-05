@@ -27,8 +27,8 @@ git_branch() {
 }
 
 # prompt
-PROMPT="╭─ ${user_host} ${current_dir} \$(git_branch)
-╰─ %B%F{$WHITE}➜%f%b "
+PROMPT="╭─${user_host} ${current_dir} \$(git_branch)
+╰─%B%F{$WHITE}$%f%b "
 
 # clock
 RPROMPT="%F{$DIM}%*%f"
