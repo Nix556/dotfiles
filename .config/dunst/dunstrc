@@ -1,0 +1,41 @@
+[global]
+
+monitor = 1
+
+# font
+font = JetBrainsMono Nerd Font 9
+
+# geometry
+origin = top-right
+offset = (12, 40)
+width = 340
+height = (0, 120)
+
+# base
+background = "#0e1016dd"
+foreground = "#e6e6e6"
+frame_color = "#8bd5cacc"
+
+frame_width = 2
+corner_radius = 8
+
+# urgency low
+[urgency_low]
+background = "#0e1016dd"
+foreground = "#a8a8a8"
+frame_color = "#6ee7b7aa"
+timeout = 5
+
+# urgency normal
+[urgency_normal]
+background = "#0e1016dd"
+foreground = "#e6e6e6"
+frame_color = "#f5c26baa"
+timeout = 5
+
+# urgency critical
+[urgency_critical]
+background = "#0e1016ff"
+foreground = "#ffffff"
+frame_color = "#ff6b6bcc"
+timeout = 0
