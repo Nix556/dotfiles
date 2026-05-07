@@ -4,80 +4,60 @@
     font-weight: 500;
 }
 
-/* bar */
 window#waybar {
     background: transparent;
     color: #e6e6e6;
 }
 
-/* shared module baseline */
+/* BASE */
 #workspaces,
 #clock,
 #battery,
 #network,
 #pulseaudio,
-#tray,
-#custom-sysinfo,
-#custom-poweroff {
+#tray {
     background: transparent;
     border: none;
     box-shadow: none;
     padding: 0 6px;
     margin: 0;
-    color: #e6e6e6;
-
-    /* smooth transitions for everything */
-    transition: color 150ms ease;
-}
-
-/* subtle hierarchy: dim some modules slightly */
-#network,
-#pulseaudio {
-    color: #cfcfcf;
 }
 
 /* WORKSPACES */
 #workspaces button {
     background: transparent;
     border: none;
-    padding: 0 4px;
+    padding: 0 6px;
     margin: 0;
     color: #a8a8a8;
+    min-height: 26px;
+}
+
+#workspaces button:hover {
+    background: transparent;
+    color: #ffffff;
 }
 
 #workspaces button.active {
     color: #ffffff;
-    border-bottom: 1px solid #ffffff;
 }
 
-#workspaces button:hover {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+/* RIGHT SIDE ACCENTS */
+#network,
+#pulseaudio {
+    color: #cfcfcf;
 }
 
-/* CLOCK */
 #clock {
     color: #ffffff;
 }
 
-/* BATTERY */
-#battery.warning {
-    color: #f5c26b;
-}
+/* STATE COLORS */
+#battery.warning { color: #f5c26b; }
+#battery.critical { color: #ff6b6b; }
+#battery.charging { color: #8bd5ca; }
 
-#battery.critical {
-    color: #ff6b6b;
-}
-
-#battery.charging {
-    color: #8bd5ca;
-}
-
-/* GROUP spacing fix */
-#group-information > * {
-    padding: 0 4px;
-}
-
-/* HOVER ACCENTS */
+/* HOVER CLEANUP */
 #network:hover,
 #pulseaudio:hover,
 #clock:hover,
@@ -85,7 +65,7 @@ window#waybar {
     color: #ffffff;
 }
 
-/* TRAY spacing */
+/* TRAY */
 #tray {
     margin-right: 4px;
 }

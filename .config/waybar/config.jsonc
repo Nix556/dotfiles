@@ -1,9 +1,8 @@
-/* -*- mode: jsonc -*- */
 {
     "layer": "top",
     "position": "top",
-    "height": 30,
-    "spacing": 4,
+    "height": 26,
+    "spacing": 2,
 
     "modules-left": [
         "hyprland/workspaces"
@@ -14,31 +13,16 @@
     ],
 
     "modules-right": [
-        "tray",
-        "group/information",
-        "battery",
-        "clock"
-    ],
-
-    "group/information": {
-    "orientation": "horizontal",
-
-    "drawer": {
-        "transition-duration": 250,
-        "transition-left-to-right": true,
-        "click-to-reveal": true,
-        "children-class": "not-power"
-    },
-
-    "modules": [
         "network",
-        "pulseaudio"
-    ]
-},
+        "pulseaudio",
+        "battery",
+        "clock",
+        "tray"
+    ],
 
     "hyprland/workspaces": {
         "disable-scroll": true,
-        "format": "{name}:{icon}",
+        "format": "{icon}",
         "format-icons": {
             "1": "",
             "2": "",
@@ -52,31 +36,29 @@
     },
 
     "hyprland/window": {
-        "max-length": 60
+        "max-length": 50
     },
 
     "clock": {
-    "format": "{:%H:%M}",
-    "tooltip": true,
-    "tooltip-format": "{:%A, %Y-%m-%d}"
+        "format": " {:%H:%M}",
+        "tooltip": true,
+        "tooltip-format": "{:%A, %Y-%m-%d}"
     },
 
     "battery": {
-        "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
         "format-icons": ["","","","",""]
     },
 
     "network": {
-    "format-wifi": "",
-    "format-ethernet": "",
-    "format-disconnected": "⚠",
-    "tooltip-format-wifi": " {essid}\nIP: {ipaddr}\nSignal: {signalStrength}%\nFreq: {frequency} MHz",
-    "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\nSpeed: {bandwidthDownBits}"
+        "format-wifi": "",
+        "format-ethernet": "",
+        "format-disconnected": "⚠"
     },
 
     "pulseaudio": {
-        "format": "{volume}% {icon}",
+        "format": "{icon} {volume}%",
         "format-muted": "",
         "format-icons": {
             "default": ["","",""]
@@ -85,6 +67,6 @@
     },
 
     "tray": {
-        "spacing": 2
+        "spacing": 6
     }
 }
