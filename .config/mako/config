@@ -2,17 +2,17 @@ default-timeout=5000
 max-visible=5
 layer=overlay
 anchor=top-right
-outer-margin=10
+outer-margin=18
 
 font=JetBrainsMono Nerd Font 10
 
-background-color=#0e1016dd
+background-color=#0e1016cc
 text-color=#e6e6e6ff
 border-color=#8bd5cacc
 
-border-size=2
-border-radius=8
-padding=10
+border-size=1
+border-radius=12
+padding=8
 
 [urgency=low]
 border-color=#a8a8a8cc
