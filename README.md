@@ -9,7 +9,7 @@ Hyprland setup.
 - Waybar
 - Wofi
 - Thunar
-- Dunst
+- Mako
 - Hyprlock
 - Hyprpaper
 
