@@ -2,7 +2,7 @@
     "layer": "top",
     "position": "top",
     "height": 24,
-    "spacing": 4,
+    "spacing": 5,
 
     "modules-left": [
         "hyprland/workspaces"
@@ -16,8 +16,7 @@
         "network",
         "pulseaudio",
         "battery",
-        "clock",
-        "tray"
+        "clock"
     ],
 
     "hyprland/workspaces": {
@@ -36,7 +35,7 @@
 
     "clock": {
         "format": "{:%H:%M}",
-        "format-alt": "{:%Y-%m-%d %H:%M}"
+        "format-alt": "{:%d-%m-%Y}"
     },
 
     "battery": {
@@ -53,7 +52,14 @@
     "network": {
         "format-wifi": "",
         "format-ethernet": "󰈀",
-        "format-disconnected": "󰖪"
+        "format-disconnected": "󰖪",
+
+        "tooltip": true,
+        "tooltip-format-wifi": "{essid}\n{ipaddr}",
+        "tooltip-format-ethernet": "{ipaddr}",
+        "tooltip-format-disconnected": "Disconnected",
+
+        "on-click": "kitty nmtui"
     },
 
     "pulseaudio": {
@@ -63,9 +69,5 @@
             "default": ["","",""]
         },
         "on-click": "pavucontrol"
-    },
-
-    "tray": {
-        "spacing": 4
     }
 }
