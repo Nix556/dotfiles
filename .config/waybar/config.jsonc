@@ -1,8 +1,8 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 26,
-    "spacing": 2,
+    "height": 24,
+    "spacing": 4,
 
     "modules-left": [
         "hyprland/workspaces"
@@ -24,28 +24,27 @@
         "disable-scroll": true,
         "format": "{icon}",
         "format-icons": {
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": "",
-            "default": "",
-            "focused": "",
-            "urgent": ""
+            "active": "",
+            "default": ""
         }
     },
 
     "hyprland/window": {
-        "max-length": 50
+        "max-length": 32,
+        "separate-outputs": false
     },
 
     "clock": {
-        "format": " {:%H:%M}",
-        "tooltip": true,
-        "tooltip-format": "{:%A, %Y-%m-%d}"
+        "format": "{:%H:%M}",
+        "format-alt": "{:%Y-%m-%d %H:%M}"
     },
 
     "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+
         "format": "{icon} {capacity}%",
         "format-charging": " {capacity}%",
         "format-icons": ["","","","",""]
@@ -53,13 +52,13 @@
 
     "network": {
         "format-wifi": "",
-        "format-ethernet": "",
-        "format-disconnected": "⚠"
+        "format-ethernet": "󰈀",
+        "format-disconnected": "󰖪"
     },
 
     "pulseaudio": {
         "format": "{icon} {volume}%",
-        "format-muted": "",
+        "format-muted": "󰖁",
         "format-icons": {
             "default": ["","",""]
         },
@@ -67,6 +66,6 @@
     },
 
     "tray": {
-        "spacing": 6
+        "spacing": 4
     }
 }
