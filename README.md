@@ -1,13 +1,13 @@
 # Dotfiles
 
-Hyprland setup.
+My Hyprland setup (kept simple)
 
 ## Stack
 
 - Hyprland
 - Kitty
 - Waybar
-- Wofi
+- Fuzzel
 - Thunar
 - Mako
 - Hyprlock
@@ -15,13 +15,14 @@ Hyprland setup.
 
 ## Setup
 
-Minimal Wayland setup, mostly just keeping things clean.
+Minimal Wayland setup
 
 - Hyprpaper handles wallpapers
 - Hyprlock uses the same wallpaper with blur
-- Waybar + Kitty + Mako share the same color scheme
+- Shared colors and theme across everything
 
 ## Notes
 
-- Laptop + external monitor setup
-- Still tweaking things
+- Laptop + external monitors
+- Mostly keyboard driven
+- Still tweaking thing sometimes
