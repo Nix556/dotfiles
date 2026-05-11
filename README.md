@@ -1,28 +1,84 @@
 # Dotfiles
 
-My Hyprland setup (kept simple)
+My Hyprland setup.
+Nothing fancy, just the stuff I use daily and randomly change at 2am.
 
-## Stack
+## Stuff
 
-- Hyprland
-- Kitty
-- Waybar
-- Fuzzel
-- Thunar
-- Mako
-- Hyprlock
-- Hyprpaper
+* Hyprland
+* Kitty
+* Waybar
+* Fuzzel
+* Thunar
+* Mako
+* Hyprlock
+* Hyprpaper
+* Zsh
 
 ## Setup
 
-Minimal Wayland setup
+Minimal Wayland setup.
 
-- Hyprpaper handles wallpapers
-- Hyprlock uses the same wallpaper with blur
-- Shared colors and theme across everything
+* Shared colors/theme everywhere
+* Mostly keyboard driven
+* Laptop + external monitors
+* Hyprpaper handles wallpapers
 
 ## Notes
 
-- Laptop + external monitors
-- Mostly keyboard driven
-- Still tweaking thing sometimes
+* Still tweaking stuff sometimes
+* Probably not the cleanest configs
+* If something looks weird, it probably made sense at the time
+
+## Screenshots
+
+Maybe later.
+
+## Folders
+
+```text
+hypr/        -> hyprland config
+waybar/      -> waybar
+kitty/       -> terminal
+fuzzel/      -> launcher
+mako/        -> notifications
+hyprlock/    -> lockscreen
+hyprpaper/   -> wallpapers
+zsh/         -> shell stuff
+```
+
+## Dependencies
+
+```bash
+hyprland
+kitty
+waybar
+fuzzel
+thunar
+mako
+hyprlock
+hyprpaper
+cliphist
+wl-clipboard
+grim
+slurp
+playerctl
+brightnessctl
+pipewire
+```
+
+## TODO maybe
+
+* clean up configs
+* improve monitor handling
+* stop hardcoding random paths
+* split hypr config a bit
+* maybe add scripts
+
+## Install
+
+```bash
+git clone https://github.com/Nix556/dotfiles
+```
+
+Copy whatever you want from it.
