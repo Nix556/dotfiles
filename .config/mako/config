@@ -6,19 +6,19 @@ outer-margin=18
 
 font=JetBrainsMono Nerd Font 10
 
-background-color=#0e1016cc
+background-color=#0a0a0acc
 text-color=#e6e6e6ff
-border-color=#8bd5cacc
+border-color=#e6a34acc
 
 border-size=1
 border-radius=12
 padding=8
 
 [urgency=low]
-border-color=#a8a8a8cc
+border-color=#6b625bcc
 
 [urgency=normal]
-border-color=#8bd5cacc
+border-color=#e6a34a99
 
 [urgency=critical]
 border-color=#ff6b6bff
