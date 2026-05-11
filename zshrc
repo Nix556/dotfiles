@@ -6,16 +6,16 @@ HISTSIZE=10000
 SAVEHIST=10000
 
 # colors
-ACCENT="#8bd5ca"
-SUB="#cfcfcf"
-DIM="#a8a8a8"
-WHITE="#ffffff"
+RED="#c92a1a"
+ORANGE="#e6a34a"
+YELLOW="#f5c26b"
+WHITE="#ddd6cf"
+DIM="#6b625b"
 
 # user@host
-user_host='%F{$ACCENT}%n@%m%f'
-
+user_host='%F{$ORANGE}%n@%m%f'
 # path
-current_dir='%F{$SUB}%~%f'
+current_dir='%F{$WHITE}%~%f'
 
 # git
 git_branch() {
@@ -23,12 +23,12 @@ git_branch() {
   local branch
   branch=$(git symbolic-ref --quiet --short HEAD 2>/dev/null \
         || git rev-parse --short HEAD 2>/dev/null)
-  echo " $branch"
+  echo "%F{$DIM}git:%F{$WHITE}$branch%f"
 }
 
 # prompt
 PROMPT="╭─${user_host} ${current_dir} \$(git_branch)
-╰─%B%F{$WHITE}$%f%b "
+╰─%F{$WHITE}$%f "
 
 # clock
 RPROMPT="%F{$DIM}%*%f"

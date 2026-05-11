@@ -50,13 +50,13 @@ window#waybar {
 }
 
 #window {
-    color: #8a8178;
+    color: #6b625b;
 }
 
 #network,
 #pulseaudio,
 #battery {
-    color: #d1c7bd;
+    color: #ddd6cf;
 }
 
 #clock {
@@ -72,5 +72,5 @@ window#waybar {
 }
 
 #battery.charging {
-    color: #8bd5ca;
+    color: #e6a34a;
 }
