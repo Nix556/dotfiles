@@ -1,7 +1,7 @@
 # Dotfiles
 
 My Hyprland setup.
-Nothing fancy, just the stuff I use daily and randomly change.
+Nothing fancy, just my daily setup that I tweak when I feel like it.
 
 ## Stuff I use
 
@@ -15,6 +15,7 @@ Nothing fancy, just the stuff I use daily and randomly change.
 - Hyprpaper
 - Hypridle
 - Zsh
+- greetd
 
 ## Setup
 
@@ -43,8 +44,6 @@ waybar/      -> waybar
 kitty/       -> terminal
 fuzzel/      -> launcher
 mako/        -> notifications
-hyprlock/    -> lockscreen
-hyprpaper/   -> wallpapers
 zsh/         -> shell stuff
 ```
 
@@ -66,6 +65,9 @@ slurp
 playerctl
 brightnessctl
 pipewire
+greetd
+greetd-tuigreet
+hypridle
 ```
 
 ### Roadmap
@@ -80,16 +82,17 @@ pipewire
 - Fullscreen behavior fixed (no UI hiding)
 - Bitwarden setup
 - Firewall (UFW)
+- Hypridle (lock/suspend)
+- greetd (Hyprland starts after login)
 
 ### In progress
 
-- Hypridle (lock/suspend)
-- Autostart (TTY / greetd setup)
+- Clean up configs
+- Split hypr config into modules
 
 ### TODO
 
-- clean up configs
-- split hypr config into modules
+- Install tools (Wireguard, etc)
 - Improve monitor handling
 - Maybe terminal file manager (Yazi)
 
