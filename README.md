@@ -1,7 +1,7 @@
 # Dotfiles
 
 My Hyprland setup.
-Nothing fancy, just the stuff I use daily and randomly change at 2am.
+Nothing fancy, just the stuff I use daily and randomly change.
 
 ## Stuff
 
