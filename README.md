@@ -71,9 +71,7 @@ pipewire
 
 * clean up configs
 * improve monitor handling
-* stop hardcoding random paths
 * split hypr config a bit
-* maybe add scripts
 
 ## Install
 
