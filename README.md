@@ -39,12 +39,15 @@ Maybe later.
 ## Folders
 
 ```text
-hypr/        -> hyprland config
-waybar/      -> waybar
-kitty/       -> terminal
-fuzzel/      -> launcher
-mako/        -> notifications
-zsh/         -> shell stuff
+hypr/       -> hyprland config
+waybar/     -> status bar
+kitty/      -> terminal
+fuzzel/     -> launcher
+mako/       -> notifications
+hyprlock/   -> lockscreen
+hyprpaper/  -> wallpapers
+hypridle/   -> idle / lock handling
+zsh/        -> shell config
 ```
 
 ## Dependencies
