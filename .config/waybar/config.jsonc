@@ -42,7 +42,7 @@
     "tooltip-format-wifi": "{essid}\n{ipaddr}",
     "tooltip-format-ethernet": "{ipaddr}",
     "tooltip-format-disconnected": "Disconnected",
-    "on-click": "kitty nmtui"
+    "on-click": "foot -e nmtui"
   },
 
   "pulseaudio": {
