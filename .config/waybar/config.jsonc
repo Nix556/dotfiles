@@ -15,7 +15,7 @@
   },
 
   "hyprland/window": {
-    "max-length": 32,
+    "max-length": 20,
     "separate-outputs": false
   },
 
@@ -31,7 +31,6 @@
     },
 
     "format": "{icon} {capacity}%",
-    "format-charging": " {capacity}%",
     "format-icons": ["", "", "", "", ""]
   },
 

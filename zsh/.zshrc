@@ -19,4 +19,4 @@ git_branch() {
   echo "%F{$DIM}git:%f%F{$ACCENT}${branch}%f"
 }
 
-PROMPT='%F{$FG}%n%F{$DIM}@%F{$FG}%m%f %F{$FG}%~%f $(git_branch) %F{$ACCENT}❯%f '
+PROMPT='%F{$FG}%n%F{$DIM}@%F{$FG}%m%f %F{$FG}%~%f $(git_branch)%F{$ACCENT}❯%f '

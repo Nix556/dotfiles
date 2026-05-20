@@ -7,7 +7,8 @@ FILE="$DIR/$(date +'%Y-%m-%d_%H-%M-%S').png"
 
 mkdir -p "$DIR"
 
-if grim -g "$(slurp)" "$FILE"; then
-    wl-copy < "$FILE"
-    notify-send "Screenshot saved" "$FILE"
-fi
+geometry=$(slurp) || exit 0
+
+grim -g "$geometry" "$FILE"
+
+wl-copy < "$FILE"

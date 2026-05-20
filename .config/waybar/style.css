@@ -71,10 +71,6 @@ window#waybar {
     color: #b85c5c;
 }
 
-#battery.charging {
-    color: #8aa7c1;
-}
-
 #network:hover,
 #pulseaudio:hover,
 #battery:hover,

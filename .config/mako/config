@@ -11,8 +11,8 @@ text-color=#d7dee8ff
 border-color=#3d4752cc
 
 border-size=1
-border-radius=12
-padding=8
+border-radius=8
+padding=6
 
 [urgency=low]
 border-color=#2e3742cc
