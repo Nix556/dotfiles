@@ -1,7 +1,6 @@
 # Dotfiles
 
-My Hyprland setup.
-Nothing fancy, just my daily setup that I tweak when I feel like it.
+Dotfiles for my Hyprland setup.
 
 ## Stuff I use
 
@@ -17,24 +16,11 @@ Nothing fancy, just my daily setup that I tweak when I feel like it.
 - Zsh
 - greetd
 
-## Setup
-
-Minimal Wayland setup.
-
-- Shared colors/theme everywhere
-- Mostly keyboard driven
-- Laptop + external monitors
-- Hyprpaper handles wallpapers
-
 ## Notes
 
-- Still tweaking stuff sometimes
-- Probably not the cleanest configs
-- If something looks weird, it probably made sense at the time
-
-## Screenshots
-
-Maybe later.
+- Still tweaking things when I feel like it.
+- Nothing here is perfectly polished.
+- If something looks odd, I probably haven’t bothered fixing it yet.
 
 ## Folders
 
@@ -48,11 +34,12 @@ hyprlock/   -> lockscreen
 hyprpaper/  -> wallpapers
 hypridle/   -> idle / lock handling
 zsh/        -> shell config
-```
+scripts/    -> scripts
+````
 
 ## Dependencies
 
-```bash
+```text
 hyprland
 kitty
 waybar
@@ -72,32 +59,6 @@ greetd
 greetd-tuigreet
 hypridle
 ```
-
-### Roadmap
-
-### Done
-
-- Waybar status bar
-- Wallpaper + Lockscreen setup
-- Kitty / Mako / Zsh theming
-- Switched launcher to Fuzzel
-- Cleaned up apps (Zed + spotify-player setup)
-- Fullscreen behavior fixed (no UI hiding)
-- Bitwarden setup
-- Firewall (UFW)
-- Hypridle (lock/suspend)
-- greetd (Hyprland starts after login)
-
-### In progress
-
-- Clean up configs
-- Split hypr config into modules
-
-### TODO
-
-- Install tools (Wireguard, etc)
-- Improve monitor handling
-- Maybe terminal file manager (Yazi)
 
 ## Install
 
