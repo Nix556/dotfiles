@@ -6,20 +6,20 @@ outer-margin=18
 
 font=JetBrainsMono Nerd Font 10
 
-background-color=#0a0a0acc
-text-color=#e6e6e6ff
-border-color=#e6a34acc
+background-color=#050a12ee
+text-color=#d7dee8ff
+border-color=#3d4752cc
 
 border-size=1
 border-radius=12
 padding=8
 
 [urgency=low]
-border-color=#6b625bcc
+border-color=#2e3742cc
 
 [urgency=normal]
-border-color=#e6a34a99
+border-color=#4d5a68cc
 
 [urgency=critical]
-border-color=#ff6b6bff
+border-color=#b85c5cff
 default-timeout=15000
