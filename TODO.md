@@ -4,8 +4,6 @@ Just notes for myself and things I’m slowly cleaning up.
 
 ## TODO
 
-- Fix boot time via BIOS tweaks and device delays
-- Check systemd-analyze blame after changes
 - Remove unused system services like Bluetooth, cups, and avahi if not needed
 - Clean up storage and see what actually takes space
 - Disable unnecessary startup apps via services and autostart entries
@@ -29,6 +27,7 @@ Just notes for myself and things I’m slowly cleaning up.
 - greetd login setup
 - Split Hyprland config into modules
 - Improved monitor handling
+- Fix boot time via BIOS tweaks and device delays
 
 ---
 
