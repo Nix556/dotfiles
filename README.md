@@ -5,7 +5,7 @@ Dotfiles for my Hyprland setup.
 ## Stuff I use
 
 - Hyprland
-- Kitty
+- foot
 - Waybar
 - Fuzzel
 - Thunar
@@ -27,7 +27,7 @@ Dotfiles for my Hyprland setup.
 ```text
 hypr/       -> hyprland config
 waybar/     -> status bar
-kitty/      -> terminal
+foot/      -> terminal
 fuzzel/     -> launcher
 mako/       -> notifications
 hyprlock/   -> lockscreen
@@ -41,7 +41,7 @@ scripts/    -> scripts
 
 ```text
 hyprland
-kitty
+foot
 waybar
 fuzzel
 thunar
