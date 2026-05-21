@@ -27,7 +27,7 @@ Dotfiles for my Hyprland setup.
 ```text
 hypr/       -> hyprland config
 waybar/     -> status bar
-foot/      -> terminal
+foot/       -> terminal
 fuzzel/     -> launcher
 mako/       -> notifications
 hyprlock/   -> lockscreen
