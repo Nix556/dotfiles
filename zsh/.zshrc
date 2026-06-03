@@ -2,6 +2,8 @@ setopt PROMPT_SUBST
 
 export TERM=xterm-256color
 
+alias ls='ls --color=auto'
+
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
