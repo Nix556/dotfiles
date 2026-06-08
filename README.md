@@ -34,7 +34,6 @@ hyprlock/   -> lockscreen
 hyprpaper/  -> wallpapers
 hypridle/   -> idle / lock handling
 zsh/        -> shell config
-scripts/    -> scripts
 ````
 
 ## Dependencies
