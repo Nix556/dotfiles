@@ -1,0 +1,6 @@
+alias ..="cd .."
+alias v="nvim"
+alias c="clear"
+alias ls="ls -h --color=auto"
+alias grep="grep --color=auto"
+alias gs="git status"
