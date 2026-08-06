@@ -1,27 +1,22 @@
+# ~/.zshrc
+
+[ -f "$XDG_CONFIG_HOME/shell/alias" ] && source "$XDG_CONFIG_HOME/shell/alias"
+
 setopt PROMPT_SUBST
 
-alias ls='ls --color=auto'
-alias dir='dir --color=auto'
-alias vdir='vdir --color=auto'
-alias grep='grep --color=auto'
+HISTFILE=$XDG_CACHE_HOME/zsh_history
+HISTSIZE=100000
+SAVEHIST=100000
 
-HISTFILE=~/.zsh_history
-HISTSIZE=10000
-SAVEHIST=10000
-
-FG="#e6e6e6"
-DIM="#9aa0a6"
-MUTED="#6b6b6b"
-ACCENT="#1793d0"
+setopt SHARE_HISTORY
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_SPACE
+setopt EXTENDED_HISTORY
 
 git_branch() {
-  git rev-parse --is-inside-work-tree &>/dev/null || return
-
-  local branch
-  branch=$(git symbolic-ref --quiet --short HEAD 2>/dev/null \
-        || git rev-parse --short HEAD 2>/dev/null)
-
-  echo "%F{$DIM}git:%f%F{$ACCENT}${branch}%f"
+    local branch
+    branch=$(git symbolic-ref --short HEAD 2>/dev/null) || return
+    print "%F{#9aa0a6}git:%f%F{#1793d0}$branch%f"
 }
 
-PROMPT='%F{$FG}%n%F{$DIM}@%F{$FG}%m%f %F{$FG}%~%f $(git_branch)%F{$ACCENT}❯%f '
+PROMPT='%F{#e6e6e6}%n%F{#9aa0a6}@%F{#e6e6e6}%m%f %~ $(git_branch)%F{#1793d0}❯%f '
