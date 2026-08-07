@@ -1,0 +1,2 @@
+#!/bin/sh
+brightnessctl -e4 -n2 set 2%+
