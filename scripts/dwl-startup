@@ -1,0 +1,10 @@
+#!/bin/sh
+
+swaybg -i /home/jonathan/Pictures/Wallpapers/ship.png &
+fnott &
+
+swayidle -w \
+  timeout 300 "$HOME/.local/bin/lock" \
+  before-sleep "$HOME/.local/bin/lock" &
+
+wl-paste --watch cliphist store &

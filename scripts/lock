@@ -1,0 +1,6 @@
+swaylock \
+    --color 202020 \
+    --ring-color 606060 \
+    --inside-color 202020 \
+    --key-hl-color eeeeee \
+    --text-color bbbbbb
