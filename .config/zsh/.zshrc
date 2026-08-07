@@ -1,5 +1,3 @@
-# ~/.zshrc
-
 [ -f "$XDG_CONFIG_HOME/shell/alias" ] && source "$XDG_CONFIG_HOME/shell/alias"
 
 setopt PROMPT_SUBST
@@ -14,9 +12,8 @@ setopt HIST_IGNORE_SPACE
 setopt EXTENDED_HISTORY
 
 git_branch() {
-    local branch
-    branch=$(git symbolic-ref --short HEAD 2>/dev/null) || return
-    print "%F{#9aa0a6}git:%f%F{#1793d0}$branch%f"
+    local branch=$(git branch --show-current 2>/dev/null)
+    [[ -n $branch ]] && print " %F{#e5c07b}$branch%f"
 }
 
-PROMPT='%F{#e6e6e6}%n%F{#9aa0a6}@%F{#e6e6e6}%m%f %~ $(git_branch)%F{#1793d0}❯%f '
+PROMPT='%F{250}%n@%m%f %F{39}%2~%f$(git_branch) %# '
